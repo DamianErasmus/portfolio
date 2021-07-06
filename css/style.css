@@ -1,0 +1,948 @@
+@font-face {
+    font-family: 'Renner';
+    src: url(/fonts/renner-medium.otf);
+}
+
+@font-face {
+    font-family: 'Renner';
+    font-weight: lighter;
+    src: url(/fonts/renner-light.otf);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+:root {
+    --dark-1:  #121623;
+    --blue-1: #77b6ea;
+    --blue-2: #c7d3dd;
+    --white-1: #e8eef2;
+    --grey-1: #d6c9c9;
+    --purple-1: #b649aa;
+}
+
+body {
+    font-family: 'Renner', sans-serif;
+    color: black;
+    line-height: 1.2;
+}
+
+.container {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.smalltainer {
+    width: 700px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    height: 700px;
+    align-items: baseline;
+    background-color: var(--dark-1);
+    z-index: 5;
+    padding-top: 50px;
+}
+
+.top {
+    display: none;
+}
+
+
+/* INDEX */
+/* ------------------------------------------------------------------------------------------------ */
+/* 1. Hero */
+/* 2. Side Bar */
+/* 3. About */
+/* 4. Projects */
+/* 5. Slider */
+/* 6. Contact */
+/* 7. Footer */
+/* 8. Responsive Styling */
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+/* Hero */
+/* ------------------------------------------------------------------------------------------------ */
+
+.hero .grid {
+    grid-template-columns: 1.3fr 1.7fr;
+}
+
+/* Left Side */
+
+.left_side {
+    height: 100%;
+    align-items: baseline;
+    overflow: hidden;
+}
+
+.left_side img {
+    float: right;
+    height: 700px;
+    transform: translateY(-100px);
+}
+
+/* Right Side */
+
+.right_side{
+    transform: translateY(-120px);
+}
+
+.right_side h2,
+.right_side h1,
+.right_side a  {
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.right_side .logo {
+    height: 200px;
+    width: 250px;
+    margin: auto;
+}
+
+.word_space {
+    height: 110%;
+    overflow-y: hidden;
+}
+
+.right_side h1 {
+    font-size: 70px;
+    color: var(--white-1);
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px var(--white-1);
+}
+
+
+.right_side h2 {
+    font-size: 50px;
+    margin: 10px 0;
+    color: var(--purple-1);
+}
+
+/* Buttons */
+.right_side .menu_buttons {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right_side .menu_buttons button {
+    position: relative;
+    padding: 0 20px;
+    margin: 0;
+    font-family: 'Renner';
+    background: transparent;
+    border: none;
+    font-size: 50px;
+    color: var(--blue-2);
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Side Bar */
+/* ---------------------------------------------------------------------------------- */
+.side_bar{
+    position: fixed;
+    left: -200px;
+    z-index: 4;    
+    transition: left 0.4s ease-in-out;
+}
+.side_space {
+    z-index: -1;
+}
+
+.side_bar .logo {
+    width: 150px;
+    padding: 50px 0 0 50px;
+    
+}
+
+
+.side_bar .menu {
+    padding: 20px 0 0 45px;
+}
+
+.side_bar .menu ul {
+    list-style: none;
+}
+
+.side_bar .menu li {
+    padding: 0.5rem 0;
+}
+
+.side_bar .menu a {
+    line-height: 2.5rem;
+    text-decoration: none;
+    transition: font-size 0.2s ease-in;
+}
+
+.side_bar .menu a:hover {
+    font-size: 2.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about_page,
+.below_hero {
+    position: static;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+.below_hero .container {
+    margin: auto;
+    text-align: center;    
+    position: relative;
+}
+
+
+
+
+/* ABOUT */
+/* ------------------------------------------------------------------------------------------------ */
+.about .container {
+    padding: 20px 0 60px 0;
+}
+
+.about a {
+    color: var(--purple-1);
+    text-decoration: none;
+}
+
+.about a:visited {
+    color: var(--purple-1);
+}
+
+
+
+
+
+
+
+
+/* PROJECTS */
+/* ------------------------------------------------------------------------------------------------ */
+
+.projects .container{
+    position: relative;
+}
+
+.projects .container {     
+    padding: 40px 0 40px 0;   
+    text-align: center;
+}
+
+.projects .grid {
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    width:700px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    gap: 15px;
+    background-color: #000;
+}
+
+.grid .pic {
+    filter: grayscale(100%);
+    margin: auto;
+    transition: filter 0.2s ease-in;
+}
+
+.proj {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.tag {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0%;
+}
+
+/* Project Pop Overlay */
+
+
+
+.project_overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+
+.project_overlay .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 10;
+}
+
+
+.project_overlay .close:hover {
+    cursor: pointer;
+}
+
+
+.project_overlay img {
+    position: relative;
+    width: 600px;
+    height: 350px;
+}
+
+
+.project_overlay .btn1,
+.project_overlay .btn2,
+.project_overlay .btnmid {
+    position: absolute;
+    text-decoration: none;
+    top: 500px;
+    transition: transform 0.2s ease-in;
+    font-size: 2rem;
+}
+
+.project_overlay .btn1 {
+    left: 10%;
+}
+
+.project_overlay .btn2 {
+    right: 10%;
+}
+
+.project_overlay .btnmid {
+    text-decoration: none;
+    top: 500px;
+    left: 45%;
+}
+
+
+.project_overlay .btn1:hover,
+.project_overlay .btn2:hover,
+.project_overlay .btnmid:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+
+.project_overlay .click_space {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 3;
+}
+
+
+.project_overlay {
+    background-color: rgba(18, 22, 35, 0.7);
+}
+
+/* Slider */
+.swiper-container {
+    position: absolute;
+    height: 450px;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.swiper-container .swiper-slide {
+    height: 200px;
+    filter: grayscale(100%);
+}
+
+.swiper-container .swiper-slide img {
+    width: 250px;
+}
+
+.swiper-container .swiper-slide p {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    bottom: 5%;
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    height: 15px !important;
+    width: 15px !important;
+    background-color: var(--purple-1) !important;
+}
+
+
+
+
+
+
+
+
+
+/* Contact */
+/* ---------------------------------------------------------------------------------- */
+.contact .container {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    margin: auto;
+}
+
+.contact_form .form_control,
+.contact_form .form_control input,
+.contact_form textarea {
+    width: 100%;
+    background-color: var(--grey-1);
+    border: none;
+    color: var(--dark-1);    
+    font-family: 'Renner';
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact_form .form_control {
+    margin: 0.5rem 0;
+}
+
+.contact_form textarea {
+    resize: none;
+}
+
+.contact_form .form_control input:focus, 
+.contact_form textarea:focus {
+    outline: none;
+}
+
+.contact_form .btn {
+    align-items: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+/* ---------------------------------------------------------------------------------- */
+footer {
+    position: relative;
+}
+
+.footer .social a {
+    padding: 0 10px;
+}
+
+.footer .social a:hover {
+    color: var(--dark-1);
+}
+
+.footer h3 {
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styling */
+/* ---------------------------------------------------------------------------------- */
+@media (max-width:1250px) {
+    .swiper-container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width:1050px) {
+    .left_side{
+        overflow: hidden;
+    }
+
+    .right_side h1 {
+        font-size: 70px;
+    }
+    .right_side h2 {
+        font-size: 50px;
+    }
+    .right_side .menu_buttons button {
+        font-size: 30px;
+    }
+
+    .about{
+        padding: 5% 0;
+    }
+
+    .projects {
+        padding: 10% 0;
+    }
+
+
+    
+    .project_overlay img {
+        width: 700px;
+        height: 400px;
+    }
+
+
+    
+    .project_overly a {
+        font-size: 2rem;
+    }
+
+
+    
+
+    
+
+    
+    .project_overlay .btn1,
+    .project_overlay .btn2,
+    .project_overlay .btnmid {
+        top: 600px;
+    }
+
+
+    .contact {
+        padding: 2% 0 20% 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .swiper-container {
+        max-width:450px;
+        height: 400px;
+    }
+
+    .swiper-container .swiper-slide {
+        height: 150px;
+    }
+    
+    .swiper-container .swiper-slide img {
+        width: 200px;
+    }
+}
+
+@media (max-width:850px) {
+    .hero .grid {
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 450px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .left_side img{
+        padding-top: 50px;
+    }
+
+    .right_side {
+        text-align: center;
+        width: 400px;
+    }
+
+    .right_side h1 {
+        font-size: 50px;
+    }
+    .right_side h2 {
+        font-size: 40px;
+    }
+    .right_side .menu_buttons button{
+        font-size: 25px;
+    }
+
+    .right_side .logo {
+        width: 200px;
+        height: 150px;
+    }
+
+
+    .below_hero {
+        padding-top: 50px;
+        grid-template-columns: 90px auto;
+    }
+
+    .heading_50 {
+        font-size: 40px;
+    }
+
+    .about p,
+    .about h4 {
+        padding: 1rem 0;
+    }
+
+    .about p,
+    .about h4, 
+    .about a {
+        font-size: 1rem;
+    }
+
+    .projects {
+        padding-bottom: 200px;
+    }
+
+    .projects .grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+
+    
+    .project_overlay {
+        margin: auto;
+    }
+
+
+    
+
+    
+    .project_overlay p {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    
+    .project_overlay a {
+        font-size: 1.5rem;
+    }
+
+
+    
+    .project_overlay img {
+        width: 400px;
+        height: 250px;
+    }
+
+
+    
+
+    
+
+    
+    .project_overlay .btn1,
+    .project_overlay .btn2,
+    .project_overlay .btnmid {
+        top: 500px;
+        font-size: 2rem;
+    }
+
+    
+
+    
+    .project_overlay .btnmid {
+        left: 40%;
+    }
+
+
+    
+    .project_overlay .btn1 {
+        left: 0;
+    }
+
+    
+    .project_overlay .btn2 {
+        right: 0;
+    }
+
+    .contact {
+        padding-bottom: 200px;
+    }
+    
+
+    .footer .container {
+        flex-wrap: wrap;
+    }
+
+    .footer .container .social {
+        padding-top: 20px;
+    }
+} 
+
+@media (max-width: 850px) {
+    .container{
+        width: 90vw;
+    }
+    .below_hero {
+        grid-template-columns: none;
+    }
+
+    .side_bar, 
+    .side_space,
+    .left_side {
+        display: none;
+    }
+
+    .top {
+        width: 20%;
+        display: block;
+        position: fixed;
+        z-index: 4;
+        bottom: 10%;
+        right: 10%;
+        transition: opacity 0.3s ease-in;
+        border: solid 2px var(--grey-1);
+        border-radius: 5%;
+    }
+
+    .top:hover {
+        opacity: 1;
+    }
+
+    .hero {
+        width: 100vw;
+        margin: auto;
+    }
+
+    .hero,
+    .hero .grid{
+        height: 400px;
+        grid-template-columns: none;
+    }
+
+    .right_side {
+       width: 100vw;
+       transform: translateY(0);
+    }
+    .about {
+        padding-top: 100px;
+    }
+
+    .about p,
+    .about h4 {
+        padding: 0 15px;
+    }
+
+    .about a {
+        padding: 0;
+    }
+
+    .about p,
+    .about h4, 
+    .about a {
+        width: 100%;
+    }
+
+
+
+    .swiper-container {
+        padding: 10px 0 !important;
+    }
+    
+
+
+    
+    .project_overlay .btn1,
+    .project_overlay .btn2,
+    .project_overlay .btnmid {
+        top: 370px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:780px) {
+    .hero,
+    .about {
+        height: 1000px;
+    }
+
+    .contact .container {
+        padding: 200px 0;
+    }
+
+    .hero {
+        padding: 30% 0;
+    }
+
+}
+
+@media (max-width:670px) {
+    .hero {
+        padding: 30% 0;
+        height: 100%;
+    }
+
+    .right_side h1 {
+        font-size: 35px;
+    }
+
+    .right_side h2 {
+        font-size: 30px;
+    }
+    
+    .right_side .menu_buttons button {
+        font-size: 20px;
+    }
+
+    .heading_50 {
+        font-size: 30px;
+    }
+    
+    .about, 
+    .contact .container {
+        padding: 10% 0 20% 0;
+    }
+
+
+    .project_overlay p {
+        display: none;
+    }
+    
+    .project_overlay img {
+        height: 200px;
+        width: 250px;
+    }
+    
+    .project_overlay .btn1,
+    .project_overlay .btn2,
+    .project_overlay .btnmid {
+        top: 250px;
+        font-size: 1rem;
+    }
+
+
+    .footer h3, 
+    .footer p {
+        font-size: 1.2rem;
+    }
+
+    .social {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .about {
+        height: 700px;
+        padding: 50px 0 100px 0;
+    }
+
+    .projects {
+        padding: 150px 0;
+    }
+
+
+    
+    .project_overlay {
+        padding-top: 100px;
+    }
+
+
+    
+    .project_overlay img {
+        height: 250px;
+        width: 300px;
+    }
+    
+
+    
+
+    
+
+    
+    .project_overlay .btn1,
+    .project_overlay .btn2,
+    .project_overlay .btnmid {
+        top: 400px;
+        font-size: 1.3rem;
+    }
+
+    
+
+    
+    .project_overlay .btnmid {
+        left: 35%;
+    }
+
+    footer {
+        height: 150px;        
+        padding: 50px 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+}

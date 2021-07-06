@@ -1,0 +1,27 @@
+#cont {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    display: none;
+}
+
+#inner_block {
+    background-color: lightblue;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}

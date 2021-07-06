@@ -1,0 +1,271 @@
+/* INDEX */
+/* ------------------------------------------------------- */
+/* 1. Grid and Flex */
+/* 2. JS Classes */
+/* 3. Backgrounds */
+/* 4. Font Colour */
+/* 5. Font Sizes */
+/* 6. Font Effects */
+/* 7. Padding */
+/* 8. Alignment */
+/* 9. Buttons */
+
+
+/* Grid and Flex */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* JS Classes */
+.fix_logo {
+    position: fixed;
+    padding: 0;
+    top: 20px;
+    left: 5px;
+}
+
+.fix_menu {
+    position: fixed;
+    padding: 0;
+    top: 150px;
+    left: 5px;
+} 
+
+
+
+
+
+
+/* Backgrounds */
+
+.bg_blue2 {
+    background-color: var(--blue-2);
+}
+
+.bg_white {
+    background-color: var(--white-1);
+}
+
+.bg_blue {
+    background-color: var(--blue-1);
+}
+
+.bg_grey {
+    background-color: var(--grey-1);
+}
+
+.bg_purple {
+    background-color: var(--purple-1);
+}
+
+.bg_dark {
+    background-color: var(--dark-1);
+}
+
+
+
+
+
+
+
+
+/* Font Colours */
+.heading_50{
+    font-size: 50px;
+    text-align: center;
+}
+
+.blue2 {
+    color: var(--blue-2);
+}
+
+.white {
+    color: var(--white-1);
+}
+
+.blue {
+    color: var(--blue-1);
+}
+
+.grey {
+    color: var(--grey-1);
+}
+
+.purple {
+    color: var(--purple-1);
+}
+
+.dark {
+    color: var(--dark-1);
+}
+
+
+
+/* Font sizes */
+.mini {
+    font-size: 1rem;
+}
+.sm {
+    font-size: 1.25rem;
+}
+.md {
+    font-size: 1.5rem;
+}
+.lg {
+    font-size: 2rem;
+}
+
+/* Font effects */
+.bold {
+    font-style: bold;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.undl {
+    font-style: underline;
+}
+
+.glow_w {
+    text-shadow: 0px 0px 5px var(--white-1);
+}
+.glow_b {
+    text-shadow: 0px 0px 5px var(--blue-1);
+}
+.glow_b2 {
+    text-shadow: 0px 0px 5px var(--blue-2);
+}
+.glow_p {
+    text-shadow: 0px 0px 5px var(--purple-1);
+}
+.glow_g {
+    text-shadow: 0px 0px 5px var(--grey-1);
+}
+
+
+/* Padding */
+.py1 {
+    padding: 1rem 0;
+}
+.py2 {
+    padding: 1.5rem 0;
+}
+.py3 {
+    padding: 2rem 0;
+}
+.py4 {
+    padding: 3rem 0;
+}
+.px1 {
+    padding: 0 1rem;
+}
+.px2 {
+    padding: 0 1.5rem;
+}
+.px3 {
+    padding: 0 2rem;
+}
+.px4 {
+    padding: 0 3rem;
+}
+.p1 {
+    padding: 1rem;
+}
+.p2 {
+    padding: 1.5rem;
+}
+.p3 {
+    padding: 2rem;
+}
+.p4 {
+    padding: 3rem;
+}
+
+/* Margin */
+.my1 {
+    margin: 1rem 0;
+}
+.my2 {
+    margin: 1.5rem 0;
+}
+.my3 {
+    margin: 2rem 0;
+}
+.mx1 {
+    margin: 0 1rem;
+}
+.mx2 {
+    margin: 0 1.5rem;
+}
+.mx3 {
+    margin: 0 2rem;
+}
+
+/* Alignment */
+.al_left {
+    text-align: left;
+}
+.al_cent {
+    text-align: center;
+}
+.al_right {
+    text-align: right;
+}
+
+/* Borders - If no experience, then remove this*/
+.b_l_p {
+    border-left: 2px solid var(--purple-1);
+}
+.b_l_b {
+    border-left: 2px solid var(--blue-1);
+}
+.b_l_b2 {
+    border-left: 2px solid var(--blue-2);
+}
+.b_l_g {
+    border-left: 2px solid var(--grey-1);
+}
+
+
+
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: 'Renner';
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--white-1);
+}
+
+.btn:hover {
+    transform: scale(0.9);
+}
+
