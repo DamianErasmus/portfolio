@@ -897,9 +897,6 @@ footer {
         height: 700px;
         padding: 50px 0 100px 0;
     }
-
-
-
     
     .project_overlay {
         padding-top: 100px;
@@ -931,14 +928,21 @@ footer {
         left: 35%;
     }
 
-    footer {
-        height: 150px;        
+    footer {       
         padding: 50px 0;
+        overflow: auto;
+    }
+
+    footer .container .px4 {
+        padding: 0;
+    }
+
+    footer .container p {
+        font-size: 15px;
     }
 
     footer .container {
+        width: 90vw;
         flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 30px;
     }
 }
