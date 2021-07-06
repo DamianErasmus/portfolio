@@ -424,6 +424,9 @@ img {
     background-color: var(--purple-1) !important;
 }
 
+.swiper-pagination-bullet:focus {
+    outline: none !important;
+}
 
 
 
