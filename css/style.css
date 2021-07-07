@@ -424,6 +424,7 @@ img {
     background-color: var(--purple-1) !important;
 }
 
+/* Didn't change anything on my phone */
 .swiper-pagination-bullet:focus {
     outline: none !important;
 }
