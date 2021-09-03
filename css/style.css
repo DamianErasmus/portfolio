@@ -1,3 +1,17 @@
+/* INDEX */
+/* ------------------------------------------------------------------------------------------------ */
+/* 0. Global Settings */
+/* 1. Hero */
+/* 2. Side Bar */
+/* 3. About */
+/* 4. Projects */
+/* 5. Slider */
+/* 6. Contact */
+/* 7. Footer */
+/* 8. Responsive Styling */
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Global Settings */
 @font-face {
     font-family: 'Renner';
     src: url(/fonts/renner-medium.otf);
@@ -61,19 +75,6 @@ img {
 .top {
     display: none;
 }
-
-
-/* INDEX */
-/* ------------------------------------------------------------------------------------------------ */
-/* 1. Hero */
-/* 2. Side Bar */
-/* 3. About */
-/* 4. Projects */
-/* 5. Slider */
-/* 6. Contact */
-/* 7. Footer */
-/* 8. Responsive Styling */
-/* ------------------------------------------------------------------------------------------------ */
 
 
 
@@ -209,23 +210,7 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Below ero */
 .about_page,
 .below_hero {
     position: static;
@@ -233,13 +218,12 @@ img {
     display: grid;
     grid-template-columns: 200px auto;
 }
+
 .below_hero .container {
     margin: auto;
     text-align: center;    
     position: relative;
 }
-
-
 
 
 /* ABOUT */
@@ -393,7 +377,7 @@ img {
 }
 
 /* Slider */
-.swiper-container {
+.swiper {
     position: absolute;
     height: 450px;
     max-width: 1000px;
@@ -401,21 +385,25 @@ img {
     margin-bottom: 0;
 }
 
-.swiper-container .swiper-slide {
+.swiper .swiper-slide {
     height: 200px;
     filter: grayscale(100%);
 }
 
-.swiper-container .swiper-slide img {
+.swiper .swiper-slide img {
     width: 250px;
 }
 
-.swiper-container .swiper-slide p {
+.swiper .swiper-slide p {
     position: absolute;
     width: 100%;
     z-index: 3;
     bottom: 5%;
     display: none;
+}
+
+.swiper .swiper-slide .label {
+    border-radius: 5px;
 }
 
 .swiper-pagination-bullet {
@@ -530,9 +518,26 @@ footer {
 
 /* Responsive Styling */
 /* ---------------------------------------------------------------------------------- */
+/* 1. max-width:1250px */
+/* 2. max-width:1050px */
+/* 3. max-width: 850px */
+/* 4. max-width: 780px */
+/* 5. max-width: 670px */
+/* 6. max-width: 400px */
+
+
 @media (max-width:1250px) {
-    .swiper-container {
+    .swiper {
         max-width: 800px;
+    }
+    .container {
+        margin: auto;
+        width: 80vw;
+    }
+    
+
+    footer .container {
+        width: 100%;
     }
 }
 
@@ -571,12 +576,6 @@ footer {
     .project_overly a {
         font-size: 2rem;
     }
-
-
-    
-
-    
-
     
     .project_overlay .btn1,
     .project_overlay .btn2,
@@ -591,173 +590,29 @@ footer {
 }
 
 @media (max-width: 950px) {
-    .swiper-container {
+    .swiper {
         max-width:450px;
         height: 400px;
     }
 
-    .swiper-container .swiper-slide {
+    .swiper .swiper-slide {
         height: 150px;
     }
     
-    .swiper-container .swiper-slide img {
+    .swiper .swiper-slide img {
         width: 200px;
     }
 }
 
-@media (max-width:850px) {
-    .hero .grid {
-        overflow-x: hidden;
-    }
-
-    .container{
-        width: 450px;
-    }
-
-    .hero {
-        height: 500px;
-    }
-
-    .left_side img{
-        padding-top: 50px;
-    }
-
-    .right_side {
-        text-align: center;
-        width: 400px;
-    }
-
-    .right_side h1 {
-        font-size: 50px;
-    }
-    .right_side h2 {
-        font-size: 40px;
-    }
-    .right_side .menu_buttons button{
-        font-size: 25px;
-    }
-
-    .right_side .logo {
-        width: 200px;
-        height: 150px;
-    }
-
-
-    .below_hero {
-        padding-top: 50px;
-        grid-template-columns: 90px auto;
-    }
-
-    .heading_50 {
-        font-size: 40px;
-    }
-
-    .about p,
-    .about h4 {
-        padding: 1rem 0;
-    }
-
-    .about p,
-    .about h4, 
-    .about a {
-        font-size: 1rem;
-    }
-
-    .projects {
-        padding-bottom: 200px;
-    }
-
-    .projects .grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-
-    
-    .project_overlay {
-        margin: auto;
-    }
-
-
-    
-
-    
-    .project_overlay p {
-        font-size: 1.2rem;
-        padding: 10px;
-    }
-
-    
-    .project_overlay a {
-        font-size: 1.5rem;
-    }
-
-
-    
-    .project_overlay img {
-        width: 400px;
-        height: 250px;
-    }
-
-
-    
-
-    
-
-    
-    .project_overlay .btn1,
-    .project_overlay .btn2,
-    .project_overlay .btnmid {
-        top: 500px;
-        font-size: 2rem;
-    }
-
-    
-
-    
-    .project_overlay .btnmid {
-        left: 40%;
-    }
-
-
-    
-    .project_overlay .btn1 {
-        left: 0;
-    }
-
-    
-    .project_overlay .btn2 {
-        right: 0;
-    }
-
-    .contact {
-        padding-bottom: 200px;
-    }
-    
-
-    .footer .container {
-        flex-wrap: wrap;
-    }
-
-    .footer .container .social {
-        padding-top: 20px;
-    }
-} 
 
 @media (max-width: 850px) {
-    .container{
-        width: 90vw;
-    }
-    .below_hero {
-        grid-template-columns: none;
-    }
-
     .side_bar, 
     .side_space,
     .left_side {
         display: none;
     }
 
+    /* Button to go to top */
     .top {
         width: 20%;
         display: block;
@@ -777,6 +632,7 @@ footer {
     .hero {
         width: 100vw;
         margin: auto;
+        height: 500px;
     }
 
     .hero,
@@ -785,17 +641,47 @@ footer {
         grid-template-columns: none;
     }
 
+    .hero .grid {
+        overflow-x: hidden;
+    }
+
     .right_side {
        width: 100vw;
+       text-align: center;
        transform: translateY(0);
     }
+    .right_side h1 {
+        font-size: 50px;
+    }
+    .right_side h2 {
+        font-size: 40px;
+    }
+    .right_side .menu_buttons button{
+        font-size: 25px;
+    }
+
+    .right_side .logo {
+        width: 200px;
+        height: 150px;
+    }
+
+    .heading_50 {
+        font-size: 40px;
+    }
+
+
+    .below_hero {        
+        padding-top: 50px;
+        grid-template-columns: none;
+    }
+
     .about {
         padding-top: 100px;
     }
 
     .about p,
     .about h4 {
-        padding: 0 15px;
+        padding: 1rem 15px;
     }
 
     .about a {
@@ -805,47 +691,84 @@ footer {
     .about p,
     .about h4, 
     .about a {
+        font-size: 1rem;
         width: 100%;
     }
 
 
 
-    .swiper-container {
+    .swiper {
         padding: 10px 0 !important;
     }
-    
 
+    .projects {
+        padding-bottom: 200px;
+    }
 
+    .projects .grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .project_overlay {
+        margin: auto;
+    }
+       
+    .project_overlay p {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .project_overlay a {
+        font-size: 1.5rem;
+    }
     
+    .project_overlay img {
+        width: 400px;
+        height: 250px;
+    }
+
     .project_overlay .btn1,
     .project_overlay .btn2,
     .project_overlay .btnmid {
         top: 370px;
         font-size: 2rem;
     }
+
+    .project_overlay .btnmid {
+        left: 40%;
+    }
+
+    .project_overlay .btn1 {
+        left: 0;
+    }
+    
+    .project_overlay .btn2 {
+        right: 0;
+    }
+
+    .contact {
+        padding-bottom: 200px;
+    }
+    
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    footer .container .social {
+        padding-top: 20px;
+    }
 }
 
 @media (max-width:780px) {
-    .hero,
-    .about {
-        height: 1000px;
-    }
 
     .contact .container {
         padding: 200px 0;
     }
 
-    .hero {
-        padding: 30% 0;
-    }
-
 }
 
 @media (max-width:670px) {
-    .hero {
-        padding: 30% 0;
-        height: 100%;
-    }
 
     .right_side h1 {
         font-size: 35px;
@@ -932,21 +855,11 @@ footer {
         left: 35%;
     }
 
-    footer {       
-        padding: 50px 0;
-        overflow: auto;
-    }
-
     footer .container .px4 {
         padding: 0;
     }
 
     footer .container p {
         font-size: 17px;
-    }
-
-    footer .container {
-        width: 90vw;
-        flex-direction: column;
     }
 }

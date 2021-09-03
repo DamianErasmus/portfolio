@@ -180,36 +180,59 @@ footsObserver.observe(foots);
 
 //New Project Section
 //Hover effect
-const projImages = document.querySelectorAll('.swiper-container .swiper-slide');
+const projImages = document.querySelectorAll('.swiper .swiper-slide');
 
-const projLabel = document.querySelectorAll('.swiper-container .swiper-slide p');
+const projLabel = document.querySelectorAll('.swiper .swiper-slide p');
 
 const projOverlay = document.querySelectorAll('.project_overlay');
 
 const closeButton = document.querySelectorAll('.close');
 
-console.log(closeButton.length);
+//Makes project thumbnails coloured on mobile devices
+const mobileScreen = window.matchMedia('(max-width: 850px)')
 
-for(var i = 0; i < projImages.length; i++) {
-    let count = i;
-
-    projImages[count].onmouseenter = function () {
+if (mobileScreen.matches) {
+    for(var i = 0; i < projImages.length; i++) {
+        let count = i;
         projImages[count].style.filter = "grayscale(0%)";
-        projImages[count].style.cursor = "pointer";
-        projLabel[count].style.display = "block";
-    };
-    projImages[count].onmouseleave = function () {
-        projImages[count].style.filter = "grayscale(100%)";
-        projLabel[count].style.display = "none";
-    };
+        projImages[count].onmouseenter = function () {
+            projImages[count].style.cursor = "pointer";
+            projLabel[count].style.display = "block";
+        };
+        projImages[count].onmouseleave = function () {
+            projLabel[count].style.display = "none";
+        };
 
-    projImages[count].addEventListener("click", function() {
-        projOverlay[count].style.display = "block";
-    });
+        projImages[count].addEventListener("click", function() {
+            projOverlay[count].style.display = "block";
+        });
 
-    closeButton[count].addEventListener("click", function() {
-        projOverlay[count].style.display = "none";
-    });
+        closeButton[count].addEventListener("click", function() {
+            projOverlay[count].style.display = "none";
+        });
+    }
+} else {
+    for(var i = 0; i < projImages.length; i++) {
+        let count = i;
+
+        projImages[count].onmouseenter = function () {
+            projImages[count].style.filter = "grayscale(0%)";
+            projImages[count].style.cursor = "pointer";
+            projLabel[count].style.display = "block";
+        };
+        projImages[count].onmouseleave = function () {
+            projImages[count].style.filter = "grayscale(100%)";
+            projLabel[count].style.display = "none";
+        };
+
+        projImages[count].addEventListener("click", function() {
+            projOverlay[count].style.display = "block";
+        });
+
+        closeButton[count].addEventListener("click", function() {
+            projOverlay[count].style.display = "none";
+        });
+    }
 }
 
 

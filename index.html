@@ -12,10 +12,8 @@
     <script src="/js/script.js" defer></script>
 
     <!-- Slider for projects -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -93,24 +91,6 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="below_hero bg_dark">
 
         <div class="side_space"></div>
@@ -141,30 +121,13 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <!-- Projects -->
             <div class="projects" id="projects">
                 <div class="container">
                     <div class="heading_50 grey glow_g">
                         projects
                     </div>
-                    <div class="swiper-container">
+                    <div class="swiper">
 
                         <div class="swiper-wrapper">
 
@@ -181,28 +144,32 @@
                                 <p class="label md bg_purple">Tshirt Display Page</p>
                             </div>
                             <div class="swiper-slide">
+                                <img src="/images/screenshots/urlshort/chain-309566_640.png" alt="logo">
+                                <p class="label md bg_blue">Url Shortening Landing Page</p>
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="/images/screenshots/calculator/logo.png" alt="logo">
-                                <p class="label md bg_blue">Multi-themed Calculator</p>
+                                <p class="label md bg_blue2">Multi-themed Calculator</p>
                             </div>
                             <div class="swiper-slide">
                                 <img src="/images/screenshots/landingpage/logo.png" alt="logo">
-                                <p class="label md bg_white">Tshirt Landing Page</p>
+                                <p class="label md bg_purple">Tshirt Landing Page</p>
                             </div>
                             <div class="swiper-slide">
                                 <img src="/images/screenshots/easybank/logo.png" alt="logo">
-                                <p class="label md bg_purple">Easybank Landing Page</p>
+                                <p class="label md bg_blue">Easybank Landing Page</p>
                             </div>
                             <div class="swiper-slide">
                                 <img src="/images/screenshots/manage/logo.png" alt="logo">
-                                <p class="label md bg_blue">Manage Landing Page</p>
+                                <p class="label md bg_blue2">Manage Landing Page</p>
                             </div>
                             <div class="swiper-slide">
                                 <img src="/images/screenshots/optribute/logo.png" alt="logo">
-                                <p class="label md bg_blue2">Tribute Page</p>
+                                <p class="label md bg_purple">Tribute Page</p>
                             </div>
                             <div class="swiper-slide">
                                 <img src="/images/screenshots/others/pexels-fernando-arcos-211122.jpg" alt="logo">
-                                <p class="label md bg_purple">Other Projects</p>
+                                <p class="label md bg_blue">Other Projects</p>
                             </div>
                             
                         </div>
@@ -268,8 +235,24 @@
                 <div class="close">
                     <i class="far fa-window-close fa-3x white"></i>
                 </div>
-                <img src="/images/screenshots/calculator/display.png" alt="portfolio">
+                <img src="/images/screenshots/urlshort/technology-2468063_640.png" alt="urlshorteningpage">
                 <div class="bg_blue">
+                    <h4 class="md dark bgu">Url Shortening Landing Page</h4>
+                    <p class="sm dark p2">A Frontend Mentor Project where an API is integrated into a landing page in order to shorten an inputted link.
+                    </p>
+                </div>
+                <div class="click_space" id="click_space1">
+                    <a href="https://github.com/DamianErasmus/urlshorteningapi" class="md dark bg_white px2 btn1">Github</a>
+                    <a href="https://deshorterlinks.netlify.app/" class="md dark bg_white px2 btn2">Live preview</a>
+                </div>
+            </div>
+
+            <div class="project_overlay al_cent">
+                <div class="close">
+                    <i class="far fa-window-close fa-3x white"></i>
+                </div>
+                <img src="/images/screenshots/calculator/display.png" alt="portfolio">
+                <div class="bg_blue2">
                     <h4 class="md dark">Multi-themed Calculator</h4>
                     <p class="sm dark p2">
                         A Frontend Mentor project to create a responsive calculator web page that has the option of changing colours
@@ -286,7 +269,7 @@
                     <i class="far fa-window-close fa-3x white"></i>
                 </div>
                 <img src="/images/screenshots/landingpage/all.png" alt="landingpage">
-                <div class=" bg_blue2">
+                <div class="bg_purple">
                     <h4 class="md dark">Responsive Landing Page</h4>
                     <p class="sm dark p2">A landing page made using flex-box, grid, gradient backgrounds, JS
                         intersection observers and delay functions, and a Siema JS carousel plugin for a slider.
@@ -304,7 +287,7 @@
                     <i class="far fa-window-close fa-3x white"></i>
                 </div>
                 <img src="/images/screenshots/easybank/display.png" alt="portfolio">
-                <div class="bg_purple">
+                <div class="bg_blue">
                     <h4 class="md dark">Easybank Landing Page</h4>
                     <p class="sm dark p2">
                         Another Frontend Mentor Project to create a responsive landing page for a Bank using HTML, CSS and Javascript
@@ -321,7 +304,7 @@
                     <i class="far fa-window-close fa-3x white"></i>
                 </div>
                 <img src="/images/screenshots/manage/display.png" alt="portfolio">
-                <div class="bg_blue">
+                <div class="bg_blue2">
                     <h4 class="md dark">Manage Landing Page</h4>
                     <p class="sm dark p2">
                         A Landing Page Project provided by Frontend Mentor for a management organisation. Made use of HTML, CSS, Javascript and external libraries for the slider in the testimonial sections. 
@@ -338,7 +321,7 @@
                     <i class="far fa-window-close fa-3x white"></i>
                 </div>
                 <img src="/images/screenshots/optribute/display.png" alt="tributepage">
-                <div class=" bg_blue2">
+                <div class="bg_purple">
                     <h4 class="md dark">Tribute Page</h4>
                     <p class="sm dark p2">
                         A tribute page I made of my favourite TV show. I made use of a CSS library called "Material
@@ -356,7 +339,7 @@
                     <i class="far fa-window-close fa-3x white"></i>
                 </div>
                 <img src="/images/screenshots/others/pexels-fernando-arcos-211122.jpg" alt="other">
-                <div class="bg_purple">
+                <div class="bg_blue">
                     <h4 class="md dark">Other Projects</h4>
                     <p class="sm dark p2">
                         I've practiced making other sites too, but they weren't perfect so I didn't deploy them.
@@ -368,28 +351,6 @@
                     <a href="https://github.com/DamianErasmus/otherprojects" class="md dark bg_white px2 btnmid">Github</a>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <!-- Contact -->
             <!-- ---------------------------------------- -->
@@ -418,7 +379,6 @@
         </div>
     </section>
 
-
     <div class="top">
         <a href="#">
             <div class="up">
@@ -426,7 +386,6 @@
             </div>
         </a>
     </div>
-
 
     <footer class="footer py3 bg_purple">
         <h3 class="lg al_cent dark">Let's Connect</h3>
@@ -445,14 +404,16 @@
     </footer>
 
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiper = new Swiper('.swiper', {
             // Optional parameters
             columns: 2,
             slidesPerView: 1,
-            slidesPerColumn: 2,
             spaceBetween: 10,
             loop: false,
             grabCursor: true,
+            grid: {
+                rows: 2,
+            },
 
 
             // If we need pagination
@@ -465,18 +426,24 @@
                 1250: {
                     columns: 3,
                     slidesPerView: 3,
-                    slidesPerColumn: 2,
+                    grid: {
+                        rows: 2,
+                    },
                     spaceBetween: 10,
                 },
                 1050: {
                     slidesPerView: 2,
-                    slidesPerColumn: 2,
+                    grid: {
+                        rows: 2,
+                    },
                     spaceBetween: 10,
                 },
                 400: {
                     columns: 2,
                     slidesPerView: 2,
-                    slidesPerColumn: 2,
+                    grid: {
+                        rows: 2,
+                    },
                     spaceBetween: 10,
                 },
             }
