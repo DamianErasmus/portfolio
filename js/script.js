@@ -130,6 +130,7 @@ const sideBar = document.querySelector(".side_bar");
 //use same observer to show the up button
 
 const scrollUp = document.querySelector(".top");
+scrollUp.style.opacity = "0";
 
 const hero = document.querySelector(".hero");
 const logo = document.querySelector(".logo");
